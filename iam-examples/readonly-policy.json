@@ -1,0 +1,19 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ReadOnlyAccess",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:Describe*",
+        "s3:ListAllMyBuckets",
+        "s3:ListBucket",
+        "cloudwatch:Describe*",
+        "cloudwatch:Get*",
+        "logs:Describe*",
+        "logs:Get*"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
